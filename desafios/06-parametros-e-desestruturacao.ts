@@ -18,10 +18,16 @@ function updateUserController({id, name, email, password}) {
 }
 
 const userRepository = {
-  update: ({id, name, email, password} : IUser) => { user: {
-    id,
-    name,
-    email,
-    password,
-  } },
+  update: ({id, name, email, password}) => { 
+    
+    return {
+      user: {
+      id,
+      name,
+      email,
+      password,
+      } 
+    }
+  }
+
 }
